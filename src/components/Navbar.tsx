@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useScrolled } from "@/hooks/useScrolled";
 import { useCartStore } from "@/store/cartStore";
+import logo from "@/images/logoEuphoria.png";
 
 const links = [
   { to: "/", label: "Home" },
@@ -31,11 +32,9 @@ export function Navbar() {
         }}
       >
         <div className="mx-auto max-w-7xl px-5 lg:px-8 h-20 flex items-center justify-between">
-          <Link to="/" className="flex flex-col leading-none">
-            <span className="font-display text-3xl tracking-widest text-gold">EUPHORIA</span>
-            <span className="font-body text-[10px] uppercase tracking-[0.3em] text-muted-foreground-x mt-0.5">
-              Pub Food &amp; Bar
-            </span>
+          <Link to="/" className="flex items-center gap-3 leading-none">
+            <img src={logo} alt="Euphoria Pub Food & Bar" className="h-16 w-auto object-contain" />
+            <span className="sr-only">Euphoria Pub Food & Bar</span>
           </Link>
 
           <ul className="hidden lg:flex items-center gap-9">

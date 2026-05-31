@@ -1,12 +1,16 @@
 import { Link } from "@tanstack/react-router";
 import { MapPin, Phone, Clock, Instagram, Facebook, Video } from "lucide-react";
+import logo from "@/images/logoEuphoria.png";
 
 export function Footer() {
   return (
     <footer className="bg-[#0a0a0a] border-t border-gold/40 mt-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8 py-14 grid gap-10 lg:grid-cols-3">
         <div>
-          <div className="font-display text-4xl tracking-widest text-gold">EUPHORIA</div>
+          <div className="flex items-center gap-4">
+            <img src={logo} alt="Euphoria Pub Food & Bar" className="h-20 w-auto object-contain" />
+            <span className="sr-only">Euphoria Pub Food & Bar</span>
+          </div>
           <p className="font-body text-sm text-muted-foreground-x mt-2 italic">
             Where the night finds its voice.
           </p>

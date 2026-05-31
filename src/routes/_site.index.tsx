@@ -4,6 +4,7 @@ import { ChevronDown, Music, Calendar, Wine, Star, Plus } from "lucide-react";
 import { Particles } from "@/components/Particles";
 import { CountUp } from "@/components/CountUp";
 import { MenuItemCard } from "@/components/MenuItemCard";
+import logo from "@/images/logoEuphoria.png";
 import { useMenuStore } from "@/store/menuStore";
 import { events } from "@/data/eventsData";
 import { formatFCFA } from "@/lib/format";
@@ -71,12 +72,19 @@ function HomePage() {
           >
             Welcome to
           </motion.p>
+          <motion.img
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            src={logo}
+            alt="Euphoria Pub Food & Bar"
+            className="mx-auto h-80 w-auto object-contain"
+          />
           <motion.h1
             initial={{ opacity: 0, scale: 0.94 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.9, delay: 0.15 }}
-            className="font-display text-[18vw] md:text-[10vw] leading-none tracking-[0.06em] text-[var(--text-primary)] my-2"
-            style={{ textShadow: "0 0 40px rgba(212,175,55,0.45)" }}
+            className="sr-only"
           >
             EUPHORIA
           </motion.h1>
