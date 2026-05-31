@@ -1,0 +1,1 @@
+import{c as a,p as i}from"./middleware-DJ6N5cf8.js";const s=a()(i(e=>({receptionPin:"9999",adminPin:"9999",whatsappNumber:"+22890000000",restaurantName:"Euphoria Pub Food & Bar",tagline:"Where the night finds its voice.",update:t=>e(t)}),{name:"euphoria-settings"}));export{s as u};
